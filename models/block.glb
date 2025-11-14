@@ -1,0 +1,82 @@
+# red_block.glb
+
+This is a minimal GLB file that represents a simple red 3D cube. You can save this as `red_block.glb` and load it in your Three.js scene.
+
+```json
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "minimal-red-cube"
+  },
+  "scenes": [
+    {
+      "nodes": [0]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0
+          },
+          "indices": 1,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [1.0, 0.0, 0.0, 1.0],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9
+      }
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 288,
+      "uri": "data:application/octet-stream;base64,AAAAAAAA8D8AAAAAAAAAQAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAIA/AAAAAAAAAACAAAAAAADwPwAAAAAAAABAQAAAAAAAEBAAAAAAAAQEAAAAAAAQEAAA=="
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 72,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 72,
+      "byteLength": 216,
+      "target": 34963
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 8,
+      "type": "VEC3",
+      "max": [0.5, 0.5, 0.5],
+      "min": [-0.5, -0.5, -0.5]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5123,
+      "count": 36,
+      "type": "SCALAR"
+    }
+  ]
+}
+```
+
+This JSON represents a `.glb` cube with a red material. You can either convert it into a proper binary GLB using tools like [glTF-Pipeline](https://github.com/CesiumGS/gltf-pipeline) or import this structure into Blender/Three.js editors to save as `red_block.glb`.
